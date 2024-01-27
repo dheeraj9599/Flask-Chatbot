@@ -23,9 +23,6 @@ embedding = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY)
 
 @app.route('/<question>')
 def Model(question):
-  ques = requests.get_data('question')
-
-  print(ques)
   if question == "":
     return {"":""}
   
