@@ -35,10 +35,9 @@ def Model(question):
 
   str = "ans : {}".format(answer)
 
-  str = '{"' + str.replace(':', '":"') +'"}'
+  ans = '{"' + str.replace(':', '":"') +'"}'
 
-  # print(json.loads(str))
-  return json.loads(str)
+  return json.loads(ans)
 
 if __name__ == "__main__":
     app.run(debug=True)  
