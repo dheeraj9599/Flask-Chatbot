@@ -8,7 +8,7 @@ from langchain.indexes.vectorstore import VectorStoreIndexWrapper # For wrapping
 from langchain.vectorstores import FAISS # For Storing the Vectors 
 from langchain.llms import OpenAI # LLM Model
 from langchain.embeddings import OpenAIEmbeddings # For converting text into vectors 
-from PyPDF2 import PdfReader # For reading a PDF Document
+# from PyPDF2 import PdfReader # For reading a PDF Document
 # from typing_extensions import Concatenate # For Concatenating Strings
 from langchain.text_splitter import CharacterTextSplitter # for splitting words into characters
 
