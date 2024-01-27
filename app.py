@@ -1,5 +1,6 @@
 from flask import Flask
 import json
+import os
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ from PyPDF2 import PdfReader # For reading a PDF Document
 from langchain.text_splitter import CharacterTextSplitter # for splitting words into characters
 
 
-OPENAI_API_KEY = os.environ['API_KEY']
+OPENAI_API_KEY = os.getenv('API_KEY')
 
 
 llm = OpenAI(openai_api_key = OPENAI_API_KEY)
