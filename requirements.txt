@@ -4,4 +4,4 @@ faiss-cpu
 tiktoken
 flask
 gunicorn
-Flask-Cors
+flask-cors
