@@ -1,8 +1,11 @@
 from flask import Flask
 import json
 import os
+from flask_cors import CORS 
 
 app = Flask(__name__)
+CORS(app)
+
 
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper # For wrapping the vectors in a package
 from langchain.vectorstores import FAISS # For Storing the Vectors 
