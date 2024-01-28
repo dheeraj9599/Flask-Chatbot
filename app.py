@@ -33,7 +33,7 @@ def Model(question):
   answer = vector_index.query(query_text, llm=llm).strip()
   
 
-  str = "ans : {}".format(answer)
+  str = "ans:{}".format(answer)
 
   ans = '{"' + str.replace(':', '":"') +'"}'
 
